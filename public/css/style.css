@@ -120,6 +120,7 @@ a {
 
 .chat-form-container form {
   display: flex;
+  margin: auto;
 }
 
 .chat-form-container input[type="text"] {
@@ -197,6 +198,16 @@ a {
   }
 
   .chat-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 417px) {
+  .send-text {
+    display: none;
+  }
+
+  .leave-text {
     display: none;
   }
 }

@@ -20,7 +20,6 @@ app.use(express.static(path.join(__dirname, "public")));
 io.on("connection", (socket) => {
   socket.on("joinRoom", ({ username, room }) => {
     const user = userJoin(socket.id, username, room);
-    console.log(user);
     socket.join(user.room);
 
     socket.emit(
